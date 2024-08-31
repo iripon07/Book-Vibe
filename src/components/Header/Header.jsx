@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
   const links = (
@@ -38,51 +38,43 @@ const Header = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-lg text-secondary"
             >
               <li>
-                <a>Parent</a>
-                <ul className="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
+                <NavLink to="/">Home</NavLink>
               </li>
               <li>
-                <a>Item 3</a>
+                <NavLink to="/books">Listed Books</NavLink>
+              </li>
+              <li>
+                <NavLink to="/pages">Pages to Read</NavLink>
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">daisyUI</a>
+          <Link className="text-[28px] font-bold text-primary" to="/">
+            Book Vibe
+          </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
+          <ul className="menu menu-horizontal px-1 text-lg text-secondary">
             <li>
-              <a>Item 1</a>
+              <NavLink to="/">Home</NavLink>
             </li>
             <li>
-              <details>
-                <summary>Parent</summary>
-                <ul className="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
-              </details>
+              <NavLink to="/books">Listed Books</NavLink>
             </li>
             <li>
-              <a>Item 3</a>
+              <NavLink to="/pages">Pages to Read</NavLink>
             </li>
           </ul>
         </div>
-        <div className="navbar-end">
-          <a className="btn">Button</a>
+        <div className="navbar-end text-lg font-semibold text-[#FFFFFF]">
+          <Link className="bg-[#59C6D2] px-7 py-[12px] rounded-lg">
+            Sign In
+          </Link>
+          <Link className="bg-[#23BE0A] px-7 py-[12px] rounded-lg ml-4">
+            Sign Up
+          </Link>
         </div>
       </div>
     </nav>
