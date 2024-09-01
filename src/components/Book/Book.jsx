@@ -9,10 +9,7 @@ const Book = ({ book }) => {
         className="p-6 rounded-2xl"
         style={{ border: `1px solid rgba(19, 19, 19, 0.15)` }}
       >
-        <div
-          className="bg-[#F3F3F3] flex items-center justify-center rounded-2xl"
-          style={{ border: `1px solid red` }}
-        >
+        <div className="bg-[#F3F3F3] flex items-center justify-center rounded-2xl">
           <img src={image} alt={`Name of book is ${name}`} />
         </div>
         <p className="text-base	text-[#23BE0A] font-medium mt-6 mb-4">
