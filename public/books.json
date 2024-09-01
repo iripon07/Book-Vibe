@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "name": "The Silent Patient",
+    "author": "Alex Michaelides",
+    "image": "https://i.ibb.co/Qkxr0Js/5.png",
+    "review": "A gripping psychological thriller with a stunning twist that will keep you on the edge of your seat.",
+    "totalPages": 336,
+    "rating": 4.5,
+    "category": "Fiction",
+    "tags": ["Suspense", "Psychological"],
+    "publisher": "Celadon Books",
+    "yearOfPublishing": 2019
+  },
+  {
+    "id": 2,
+    "name": "Educated",
+    "author": "Tara Westover",
+    "image": "https://i.ibb.co/Gv6tRPL/4.png",
+    "review": "A powerful memoir about resilience, self-discovery, and the transformative power of education.",
+    "totalPages": 352,
+    "rating": 4.7,
+    "category": "Biography",
+    "tags": ["Memoir", "Inspirational"],
+    "publisher": "Random House",
+    "yearOfPublishing": 2018
+  },
+  {
+    "id": 3,
+    "name": "Atomic Habits",
+    "author": "James Clear",
+    "image": "https://i.ibb.co/mzw9HL4/3.png",
+    "review": "An insightful guide on building good habits and breaking bad ones with practical strategies and tips.",
+    "totalPages": 320,
+    "rating": 4.8,
+    "category": "Self-Help",
+    "tags": ["Productivity", "Motivation"],
+    "publisher": "Avery",
+    "yearOfPublishing": 2018
+  },
+  {
+    "id": 4,
+    "name": "Where the Crawdads Sing",
+    "author": "Delia Owens",
+    "image": "https://i.ibb.co/jwQB8Vq/2.png",
+    "review": "A haunting tale of a young girl growing up in isolation, with a blend of mystery and love.",
+    "totalPages": 384,
+    "rating": 4.6,
+    "category": "Fiction",
+    "tags": ["Mystery", "Romance"],
+    "publisher": "G.P. Putnam's Sons",
+    "yearOfPublishing": 2018
+  },
+  {
+    "id": 5,
+    "name": "Becoming",
+    "author": "Michelle Obama",
+    "image": "https://i.ibb.co/fxcw3V4/1.png",
+    "review": "An intimate and inspiring memoir by the former First Lady of the United States.",
+    "totalPages": 448,
+    "rating": 4.9,
+    "category": "Biography",
+    "tags": ["Memoir", "Inspirational"],
+    "publisher": "Crown Publishing Group",
+    "yearOfPublishing": 2018
+  },
+  {
+    "id": 6,
+    "name": "The Subtle Art of Not Giving a F*ck",
+    "author": "Mark Manson",
+    "image": "https://i.ibb.co/Ypjz5jX/6.png",
+    "review": "A counterintuitive approach to living a good life by embracing life's challenges and letting go of unrealistic expectations.",
+    "totalPages": 224,
+    "rating": 4.2,
+    "category": "Self-Help",
+    "tags": ["Motivation", "Philosophy"],
+    "publisher": "HarperOne",
+    "yearOfPublishing": 2016
+  }
+]

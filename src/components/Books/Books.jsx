@@ -1,26 +1,27 @@
-import React from 'react'
+import React, { useEffect, useState } from "react";
+import Book from "../Book/Book";
 
 const Books = () => {
+  const [books, setBooks] = useState([]);
+
+  useEffect(() => {
+    fetch(`books.json`)
+      .then((res) => res.json())
+      .then((data) => setBooks(data));
+  }, [setBooks]);
+
   return (
     <div>
-      <div className="card bg-base-100 w-96 shadow-xl">
-        <figure className="px-10 pt-10">
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-            alt="Shoes"
-            className="rounded-xl"
-          />
-        </figure>
-        <div className="card-body items-center text-center">
-          <h2 className="card-title">Shoes!</h2>
-          <p>If a dog chews shoes whose shoes does he choose?</p>
-          <div className="card-actions">
-            <button className="btn btn-primary">Buy Now</button>
-          </div>
-        </div>
+      <h1 className="text-primary font-bold text-[40px] text-center mb-10">
+        Books: {books.length}
+      </h1>
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-6">
+        {books.map((book) => (
+          <Book book={book} key={book.id}></Book>
+        ))}
       </div>
     </div>
   );
-}
+};
 
-export default Books
+export default Books;
